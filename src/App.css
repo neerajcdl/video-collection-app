@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #213547;
+  margin: 16px auto;
+}
+
+.form-part {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.form-part form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-part form input,
+.form-part form textarea {
+  font-size: 18px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: monospace;
+}
+.form-part form button {
+  font-size: 24px;
+  padding: 10px 15px;
+  font-weight: 700;
+  border: none;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.video-part {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+.video {
+  width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+p.caption {
+  font-size: 16px;
+  font-family: monospace;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+p.timestamps {
+  font-size: 16px;
+  font-family: monospace;
+  font-weight: 700;
+}
+.video-player {
+  padding: 10px;
+}
+.title-time {
+  margin: 10px;
+}
+.time-delete-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.delete-icon {
+  color: #eb2f06;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 620px) {
+  .form-part {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .form-part {
+    max-width: 280px;
+  }
+}
